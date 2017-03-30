@@ -1,0 +1,15 @@
+œredni czas dla "tablica" o rozmiarze1000 wynosi: 0.226619
+œredni czas dla "tablica" o rozmiarze1000 wynosi: 0.108289
+œredni czas dla "tablica" o rozmiarze1000 wynosi: 0.164266
+œredni czas dla "tablica" o rozmiarze1000 wynosi: 0.1165
+œredni czas dla "tablica" o rozmiarze1000 wynosi: 0.078074
+œredni czas dla "tablica powiekszania o1" o rozmiarze10000 wynosi: 10.6871
+œredni czas dla "tablica zwiêkszania x2" o rozmiarze1000 wynosi: 0.120001
+œredni czas dla "tablica zwiêkszania x2" o rozmiarze10000 wynosi: 13.1254
+œredni czas dla "tablica zwiêkszania x2" o rozmiarze1000 wynosi: 0.346078
+œredni czas dla "tablica zwiêkszania x2" o rozmiarze1000 wynosi: 0.295661
+œredni czas dla "tablica zwiêkszania x2" o rozmiarze1000 wynosi: 0.002134
+œredni czas dla "tablica zwiêkszania x2" o rozmiarze1000 wynosi: 0.00179
+œredni czas dla "tablica zwiêkszania x2" o rozmiarze1000 wynosi: 0.000921
+œredni czas dla "tablica zwiêkszania x2" o rozmiarze1000 wynosi: 0.001366
+œredni czas dla "tablica zwiêkszania x2" o rozmiarze1000000 wynosi: 0.479774
