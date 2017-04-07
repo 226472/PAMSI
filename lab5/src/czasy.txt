@@ -1,0 +1,1 @@
+sredni czas dla "lista" o rozmiarze10000 wynosi: 0.0004131s
