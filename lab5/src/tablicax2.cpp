@@ -19,6 +19,11 @@ void tablicax2::powieksztablice()
 
 string tablicax2::przedstaw_sie()
 {
-    string nazwa = "tablica zwiêkszania x2";
+    string nazwa = "tablica zwiekszania x2";
     return nazwa;
+}
+
+tablicax2::tablicax2(int rozm)
+{
+	rozmiar=rozm;
 }

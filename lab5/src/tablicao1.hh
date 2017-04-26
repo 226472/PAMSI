@@ -10,12 +10,14 @@ class tablicao1:public wykonywalny
     int *tab;
    virtual void powieksztablice();
  public:
-     tablicao1(){rozmiar=1;}
+     tablicao1();
+     tablicao1(int);
    virtual void wykonaj(int rozmiar_problemu);
    virtual string przedstaw_sie();
     void przypisanie(int index, int wartosc);
     int odczytanie(int index);
     int podajrozmiar();
     void wyswietl();
-    void rozmiarinicjuj(int rozm);
+    void inicjuj(char);
+    void quicksort(int tab[], int left, int right);
 };
