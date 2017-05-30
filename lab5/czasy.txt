@@ -1,0 +1,63 @@
+piwot prawy, malejąco
+sredni czas dla "tablica" o rozmiarze1 wynosi: 0.000109s
+sredni czas dla "tablica" o rozmiarze10 wynosi: 0.000112s
+sredni czas dla "tablica" o rozmiarze100 wynosi: 0.00029s
+sredni czas dla "tablica" o rozmiarze1000 wynosi: 0.003994s
+sredni czas dla "tablica" o rozmiarze10000 wynosi: 0.240961s
+sredni czas dla "tablica" o rozmiarze100000 wynosi: 17.4598s
+prawy, losowo
+sredni czas dla "tablica" o rozmiarze1 wynosi: 0.000118s
+sredni czas dla "tablica" o rozmiarze10 wynosi: 0.000111s
+sredni czas dla "tablica" o rozmiarze100 wynosi: 0.000129s
+sredni czas dla "tablica" o rozmiarze1000 wynosi: 0.000263s
+sredni czas dla "tablica" o rozmiarze10000 wynosi: 0.002453s
+sredni czas dla "tablica" o rozmiarze100000 wynosi: 0.037024s
+prawy, rosnaco
+sredni czas dla "tablica" o rozmiarze1 wynosi: 0.000104s
+sredni czas dla "tablica" o rozmiarze10 wynosi: 7.5e-05s
+sredni czas dla "tablica" o rozmiarze100 wynosi: 0.00012s
+sredni czas dla "tablica" o rozmiarze1000 wynosi: 0.00261s
+sredni czas dla "tablica" o rozmiarze10000 wynosi: 0.20787s
+sredni czas dla "tablica" o rozmiarze100000 wynosi: 17.2678s
+lewy, malejaco
+sredni czas dla "tablica" o rozmiarze1 wynosi: 0.000109s
+sredni czas dla "tablica" o rozmiarze10 wynosi: 0.000112s
+sredni czas dla "tablica" o rozmiarze100 wynosi: 0.000204s
+sredni czas dla "tablica" o rozmiarze1000 wynosi: 0.002689s
+sredni czas dla "tablica" o rozmiarze10000 wynosi: 0.236452s
+sredni czas dla "tablica" o rozmiarze100000 wynosi: 17.6502s
+lewy, losowo
+sredni czas dla "tablica" o rozmiarze1 wynosi: 0.000104s
+sredni czas dla "tablica" o rozmiarze10 wynosi: 0.000108s
+sredni czas dla "tablica" o rozmiarze100 wynosi: 9e-05s
+sredni czas dla "tablica" o rozmiarze1000 wynosi: 0.000295s
+sredni czas dla "tablica" o rozmiarze10000 wynosi: 0.003276s
+sredni czas dla "tablica" o rozmiarze100000 wynosi: 0.030344s
+lewy, rosnąco
+sredni czas dla "tablica" o rozmiarze1 wynosi: 0.000769s
+sredni czas dla "tablica" o rozmiarze10 wynosi: 0.00011s
+sredni czas dla "tablica" o rozmiarze100 wynosi: 0.000126s
+sredni czas dla "tablica" o rozmiarze1000 wynosi: 0.002178s
+sredni czas dla "tablica" o rozmiarze10000 wynosi: 0.215548s
+sredni czas dla "tablica" o rozmiarze100000 wynosi: 17.9065s
+srodkowy, malejąco
+sredni czas dla "tablica" o rozmiarze1 wynosi: 0.000322s
+sredni czas dla "tablica" o rozmiarze10 wynosi: 0.00011s
+sredni czas dla "tablica" o rozmiarze100 wynosi: 0.000113s
+sredni czas dla "tablica" o rozmiarze1000 wynosi: 0.000158s
+sredni czas dla "tablica" o rozmiarze10000 wynosi: 0.000731s
+sredni czas dla "tablica" o rozmiarze100000 wynosi: 0.009304s
+srodkowy, losowo
+sredni czas dla "tablica" o rozmiarze1 wynosi: 0.00016s
+sredni czas dla "tablica" o rozmiarze10 wynosi: 0.000155s
+sredni czas dla "tablica" o rozmiarze100 wynosi: 0.000188s
+sredni czas dla "tablica" o rozmiarze1000 wynosi: 0.000314s
+sredni czas dla "tablica" o rozmiarze10000 wynosi: 0.002038s
+sredni czas dla "tablica" o rozmiarze100000 wynosi: 0.033561s
+srodkowy, rosnąco
+sredni czas dla "tablica" o rozmiarze1 wynosi: 0.000103s
+sredni czas dla "tablica" o rozmiarze10 wynosi: 0.000108s
+sredni czas dla "tablica" o rozmiarze100 wynosi: 0.000109s
+sredni czas dla "tablica" o rozmiarze1000 wynosi: 0.000154s
+sredni czas dla "tablica" o rozmiarze10000 wynosi: 0.0007s
+sredni czas dla "tablica" o rozmiarze100000 wynosi: 0.008315s
