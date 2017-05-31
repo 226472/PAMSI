@@ -1,0 +1,8 @@
+sredni czas dla "drzewo AVL" o rozmiarze1 wynosi: 5.4828e-05s
+sredni czas dla "drzewo AVL" o rozmiarze10 wynosi: 5.5686e-05s
+sredni czas dla "drzewo AVL" o rozmiarze100 wynosi: 5.4752e-05s
+sredni czas dla "drzewo AVL" o rozmiarze1000 wynosi: 5.5883e-05s
+sredni czas dla "drzewo AVL" o rozmiarze10000 wynosi: 5.5197e-05s
+sredni czas dla "drzewo AVL" o rozmiarze100000 wynosi: 5.1722e-05s
+sredni czas dla "drzewo AVL" o rozmiarze1000000 wynosi: 5.2817e-05s
+sredni czas dla "drzewo AVL" o rozmiarze10000000 wynosi: 5.2733e-05s
