@@ -1,5 +1,5 @@
 #include "istack.hh"
-#include "czas.hh"
+#include "wykonywalny.hh"
 
 class stos:public istack, public wykonywalny
 {

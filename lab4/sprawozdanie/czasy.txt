@@ -1,0 +1,8 @@
+sredni czas dla "lista" o rozmiarze1 wynosi: 7.58e-05s
+sredni czas dla "lista" o rozmiarze10 wynosi: 7.185e-05s
+sredni czas dla "lista" o rozmiarze100 wynosi: 6.35e-05s
+sredni czas dla "lista" o rozmiarze1000 wynosi: 9.04e-05s
+sredni czas dla "lista" o rozmiarze10000 wynosi: 0.00018005s
+sredni czas dla "lista" o rozmiarze100000 wynosi: 0.0011652s
+sredni czas dla "lista" o rozmiarze1000000 wynosi: 0.0110446s
+sredni czas dla "lista" o rozmiarze10000000 wynosi: 0.117433s

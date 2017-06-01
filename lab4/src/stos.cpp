@@ -1,5 +1,6 @@
 #include "stos.hh"
 #include <cstdlib>
+#include <string>
 using namespace std;
 
 stos::stos()

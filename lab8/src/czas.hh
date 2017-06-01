@@ -1,6 +1,6 @@
 #include <iostream>
 #include <ctime>
-#include "tablicao1.hh"
+#include "drzewo.hh"
 using namespace std;
 
 class czas

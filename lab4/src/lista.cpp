@@ -14,7 +14,7 @@ using namespace std;
      head=0;
      tail=0;
      current=0;
-     rozmiar=rozm;
+     rozmiar=0;
      inicjuj(rozm);
  }
 int lista::size()
@@ -72,14 +72,12 @@ int lista::find(int data)
     current=0;
     return position;
 
-
-
 }
 void lista::inicjuj(int rozm)
 {
     int pozycja=0; //w tym wypadku szukana wartoœæ bêdzie na samy koñcu kolejki
-    srand(time(NULL));
-    pozycja=rand()%10*rozm/10; //generujemy tu pseudolosow¹ pozycjê
+  //  srand(time(NULL));
+  //  pozycja=rand()%10*rozm/10; //generujemy tu pseudolosow¹ pozycjê
     for(int i=0;i<rozm;++i)
     {
         if(i==pozycja)
@@ -91,8 +89,8 @@ void lista::inicjuj(int rozm)
 }
 void lista:: wykonaj(int rozmiar_problemu)
 {
-    cout<<"szukam..."<<endl;
-    cout<<"Dana wartosc 5 znajduje sie na "<<find(5)<<"pozycji na liscie."<<endl;
+    
+    find(5);
 }
 string lista:: przedstaw_sie()
 {

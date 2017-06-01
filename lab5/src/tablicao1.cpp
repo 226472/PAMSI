@@ -28,9 +28,9 @@ void tablicao1::quicksort(int tab[], int left, int right)
 {
 	int i = left;
 	int j = right;
-	//int pivot = tab[(left+right)/2];  // pivot po srodku
+	int pivot = tab[(left+right)/2];  // pivot po srodku
 	//int pivot = tab[left];            // pivot lewy skrajny
-	int pivot = tab[right];           // pivot prawy skrajny
+	//int pivot = tab[right];           // pivot prawy skrajny
 	do
 	{
 		while (tab[i] < pivot)
