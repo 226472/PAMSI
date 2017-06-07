@@ -1,0 +1,10 @@
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.0002636s
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.0003402s
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.000472s
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.000473s
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.004275s
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.0002592s
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.0002782s
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.0003642s
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.0005484s
+sredni czas dla "tablica asocjacyjna" o rozmiarze1000000 wynosi: 0.0056232s
