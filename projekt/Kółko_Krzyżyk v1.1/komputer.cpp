@@ -1,0 +1,159 @@
+#include "komputer.h"
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+using namespace std;
+Komputer::Komputer()
+{
+        poziom='g';
+}
+void Komputer::wykonaj_ruch(Rozgrywka& roz, Tokno* okno)
+{
+        roz.zmien_aktualna_figure(roz.wez_figure_komputera());
+        int miejsce;
+        if(poziom=='g')
+        {
+           srand( time( NULL ) );
+                do
+                {
+                        miejsce=(rand()%9)+1;
+                }
+                while(roz.p[miejsce]!='n');
+        }
+        else if(poziom=='l')
+        {
+                int i, minmax, temp;
+                int licznik=2;  // g³êbokosc algorytmu minmax
+                temp = -2;
+
+                for(i = 1; i <=9; i++)
+                {
+                        if(roz.p[i] == 'n')
+                        {
+                                roz.p[i] = roz.wez_figure_komputera();
+                                minmax = znajdz_najlepszy_ruch(roz, licznik);
+                                roz.p[i] = 'n';
+                                if(minmax > temp)
+                                {
+                                        temp = minmax;
+                                        miejsce = i;
+                                }
+                        }
+                }
+        }
+        else
+        {
+                int i, minmax, temp;
+                int licznik=6;
+                temp = -2;
+                for(i = 1; i <=9; i++)
+                {
+                        if(roz.p[i] == 'n')
+                        {
+                                roz.p[i] = roz.wez_figure_komputera();
+                                minmax = znajdz_najlepszy_ruch(roz, licznik);
+                                roz.p[i] = 'n';
+                                if(minmax > temp)
+                                {
+                                        temp = minmax;
+                                        miejsce = i;
+                                }
+                        }
+                }
+        }
+        switch(miejsce)
+        {
+                case 1:
+                roz.p[1]=roz.zmien_pole(roz.wez_figure_komputera(), okno->pole1);
+                break;
+                case 2:
+                roz.p[2]=roz.zmien_pole(roz.wez_figure_komputera(), okno->pole2);
+                break;
+                case 3:
+                roz.p[3]=roz.zmien_pole(roz.wez_figure_komputera(), okno->pole3);
+                break;
+                case 4:
+                roz.p[4]=roz.zmien_pole(roz.wez_figure_komputera(), okno->pole4);
+                break;
+                case 5:
+                roz.p[5]=roz.zmien_pole(roz.wez_figure_komputera(), okno->pole5);
+                break;
+                case 6:
+                roz.p[6]=roz.zmien_pole(roz.wez_figure_komputera(), okno->pole6);
+                break;
+                case 7:
+                roz.p[7]=roz.zmien_pole(roz.wez_figure_komputera(), okno->pole7);
+                break;
+                case 8:
+                roz.p[8]=roz.zmien_pole(roz.wez_figure_komputera(), okno->pole8);
+                break;
+                case 9:
+                roz.p[9]=roz.zmien_pole(roz.wez_figure_komputera(), okno->pole9);
+                break;
+
+        }
+
+                if(roz.sprawdzwygrana(roz.p, roz.wez_figure_komputera()))
+                {
+                        Application->MessageBox("Przegra³es :(","Koniec Gry",MB_OK);
+                        okno->przycisksClick(okno);
+                }
+                else
+                if(roz.sprawdzremis(roz.p))
+                {
+                        Application->MessageBox("REMIS!","Koniec Gry",MB_OK);
+                        okno->przycisksClick(okno);
+                }
+
+
+
+
+}
+void Komputer::ustaw_poziom(char nowypoziom)
+{
+        poziom=nowypoziom;
+}
+
+
+int Komputer::znajdz_najlepszy_ruch(Rozgrywka roz, int licznik)
+{
+        int m, temp;
+        if(roz.sprawdzwygrana(roz.p,roz.wez_aktualna_figure()))
+                if(roz.wez_aktualna_figure()==roz.wez_figure_komputera()) return 1;
+        else return -1;
+        if(roz.sprawdzremis(roz.p)) return 0;
+
+        if(roz.wez_aktualna_figure()==roz.wez_figure_komputera())
+                roz.zmien_aktualna_figure(roz.wez_figure_gracza());     // zamieniam gracza na przeciwnika, zeby analizowaæ ruchy przeciwnika
+        else roz.zmien_aktualna_figure(roz.wez_figure_komputera());
+
+/*w kolejnych wywolaniach rekurencyjnych naprzemiennie analizuje gre gracza i komputera
+Dla gracza obliczamy maks wynik, a dla komputera obliczamy min.
+*/
+
+        if(roz.wez_aktualna_figure() == roz.wez_figure_gracza()) temp=2;
+        else temp=-2;
+
+/*Przegldam plansze i szukam wolnych pol ruchu dla gracza.
+Wtedy na tym polu wstawiam literke gracza i wyznaczam
+wartosc tego ruchu w rekurencji. Pozniej plansze przywracam i w zaleznosci kto
+gra: komputer to wyznaczam max, a jesli gracz to wyznaczam min*/
+
+        for(int i = 1; i <= 9; i++)
+        if(roz.p[i] == 'n')
+        {
+                if(licznik == 0)
+                {
+                        temp = m;
+                        return temp;
+                }
+                roz.p[i] = roz.wez_aktualna_figure();
+                m = znajdz_najlepszy_ruch(roz, licznik - 1);  //rekurencyjne wywolanie funkcji
+                roz.p[i] = 'n';
+                if(((roz.wez_aktualna_figure() == roz.wez_figure_gracza()) && (m < temp)) || ((roz.wez_aktualna_figure() == roz.wez_figure_komputera()) && (m > temp)))
+                temp = m;
+        }
+        return temp;
+}
+
+
